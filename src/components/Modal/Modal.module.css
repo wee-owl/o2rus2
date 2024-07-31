@@ -1,0 +1,75 @@
+.modal {
+  position: absolute;
+  inset: 0;
+  display: none;
+  margin: 10px;
+  padding: 30px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  background-color: #ffffff80;
+}
+
+.modal__active {
+  display: block;
+}
+
+button[id="modal-close-button"] {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.7367 15.7345C15.6067 15.8654 15.4522 15.9694 15.2819 16.0403C15.1115 16.1113 14.9286 16.1479 14.744 16.1479C14.5593 16.1479 14.3765 16.1113 14.206 16.0403C14.0357 15.9693 13.881 15.8653 13.751 15.7343C13.751 15.7342 13.7509 15.7342 13.7508 15.7341L8.5 10.471L3.24918 15.7341C3.24909 15.7342 3.24901 15.7343 3.24893 15.7344C3.11894 15.8653 2.96432 15.9693 2.79398 16.0403C2.62352 16.1113 2.44069 16.1479 2.25603 16.1479C2.07138 16.1479 1.88855 16.1113 1.71809 16.0403C1.54782 15.9694 1.39327 15.8654 1.26332 15.7345C1.13242 15.6046 1.02851 15.45 0.957577 15.2798C0.886562 15.1093 0.85 14.9265 0.85 14.7418C0.85 14.5572 0.886562 14.3743 0.957577 14.2039C1.02857 14.0335 1.1326 13.8788 1.26366 13.7488C1.26369 13.7488 1.26373 13.7487 1.26376 13.7487L6.52682 8.49787L1.26345 3.24674L1.26332 3.24661C1.00004 2.98333 0.852131 2.62624 0.852131 2.2539C0.852131 1.88156 1.00004 1.52448 1.26332 1.26119C1.52661 0.997911 1.8837 0.85 2.25603 0.85C2.62837 0.85 2.98546 0.997911 3.24874 1.26119L3.24887 1.26132L8.5 6.52469L13.7511 1.26132L13.7513 1.26119C14.0145 0.997911 14.3716 0.85 14.744 0.85C15.1163 0.85 15.4734 0.997911 15.7367 1.26119C16 1.52448 16.1479 1.88156 16.1479 2.2539C16.1479 2.62624 16 2.98333 15.7367 3.24661L15.7365 3.24674L10.4732 8.49787L15.7362 13.7487C15.7363 13.7487 15.7363 13.7487 15.7363 13.7487C15.8674 13.8788 15.9714 14.0335 16.0424 14.2039C16.1134 14.3743 16.15 14.5572 16.15 14.7418C16.15 14.9265 16.1134 15.1093 16.0424 15.2798C15.9715 15.45 15.8676 15.6046 15.7367 15.7345ZM15.7367 15.7345C15.7365 15.7347 15.7364 15.7348 15.7362 15.735L15.6306 15.6285L15.7371 15.7341C15.737 15.7343 15.7368 15.7344 15.7367 15.7345Z' fill='%23808080' stroke='black' stroke-width='0.3'/%3E%3C/svg%3E%0A");
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.modal__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.modal__item label {
+  margin-bottom: 5px;
+}
+
+.modal__item svg {
+  right: 0;
+}
+
+.modal__item input, 
+.modal__item select {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  font-size: 12px;
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.modal__button {
+  flex: 100%;
+}
+
+button[id="match-button"], 
+button[id="save-button"] {
+  width: 300px;
+  height: 30px;
+  color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #000000;
+}
